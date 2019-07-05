@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bibliomap theme maker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+  <meta http-equiv="Expires" content="0" />
+  <meta name="robot" content="all" />
+  <meta name="description" content="Create your own bibliomap theme" />
+  <meta name="author" content="Inist-CNRS : ezTeam" />
+  <meta name="keywords" content="inist,cnrs,bibliomap,ezpaarse,analogist,ezmesure,istex,bibcnrs,metrics,consultation,log,logs,couperin,insb,inc,inee,insis,inshs,in2p3,insmi,ins2i,insu,inp,ezteam" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bibliomap-theme.github.io" />
+  <meta property="og:title" content="Bibliomap theme maker" />
+  <meta property="og:description" content="Create your own bibliomap theme" />
+  <meta property="og:image" content="assets/img/bibliomap.png" />
+  <meta property="og:language" content="en" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@ezpaarse" />
+  <meta name="twitter:title" content="Bibliomap theme maker" />
+  <meta name="twitter:description" content="Create your own bibliomap theme" />
+  <meta name="twitter:image" content="assets/img/bibliomap.png" />
+  <meta name="twitter:url" content="https://bibliomap-theme.github.io" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/materialize.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+  <ul id="slide-out" class="sidenav sidenav-fixed">
+    <li>
+      <div class="row top-side">
+        <div class="col s3">
+          <img src="assets/img/logo.svg" alt="Logo" width="66px">
+        </div>
+        <div class="col s8">
+          <p>
+            <strong>
+              Consultations en direct des articles de plusieurs milliers de revues scientifiques électroniques disponibles en texte intégral ainsi que des bases de données.
+            </strong>
+          </p>
+        </div>
+      </div>
+    </li>
+    <li><div class="divider"></div></li>
+    <li class="center-align">
+      <div class="chip" id="Timer">0j 0h 0m 0s</div>         
+    </li>
+    <li><div class="divider"></div></li>
+    <li>
+      <ul class="collection bibliomap-collection">
+        <li class="collection-item center-align"> 
+          <span class="label html">
+            <strong>HTML</strong> : <span id="extHTML">0</span>
+          </span>
+          <span class="label pdf">
+            <strong>PDF</strong> : <span id="extPDF">0</span>
+          </span>
+        </li>
+      </ul>
+    </li>
+    <li><div class="divider"></div></li>
+    <li>
+      <ul class="collection bibliomap-collection" id="legend"></ul>
+    </li>
+  </ul>
+
+  <script src="assets/js/jquery-3.4.0.min.js"></script>
+  <script src="assets/js/materialize.min.js"></script>
+  <script src="assets/js/jszip.min.js"></script>
+
+</body>
+</html>
